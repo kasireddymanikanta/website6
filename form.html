@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associate Engineer Application</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+        <img src="logo.png" alt="Company Logo" height="50"> Startup Inc.
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="form.html">Apply Now</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Application Form Section -->
+<div class="container my-5">
+    <div class="form-header text-center bg-primary text-white py-3">
+        <h2>Apply for Associate Engineer Role</h2>
+    </div>
+    <div class="form-section p-4 bg-light">
+        <form id="applicationForm" novalidate>
+            
+            <!-- Personal Details Section -->
+            <h5>Personal Details</h5>
+            <div class="form-group">
+                <label for="name">Full Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="name" required>
+                <div class="invalid-feedback">Please enter your full name.</div>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth <span class="text-danger">*</span></label>
+                <input type="date" class="form-control" id="dob" required>
+                <div class="invalid-feedback">Please enter your date of birth.</div>
+            </div>
+            <div class="form-group">
+                <label for="address">Address <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="address" required>
+                <div class="invalid-feedback">Please enter your address.</div>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact Number <span class="text-danger">*</span></label>
+                <input type="tel" class="form-control" id="contact" required pattern="[0-9]{10}">
+                <div class="invalid-feedback">Please enter a valid 10-digit contact number.</div>
+            </div>
+            <div class="form-group">
+                <label for="citizenship">Citizenship <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="citizenship" required>
+                <div class="invalid-feedback">Please enter your citizenship details.</div>
+            </div>
+
+            <!-- Upload Documents Section -->
+            <h5>Upload Documents</h5>
+            <div class="form-group">
+                <label for="resume">Upload Resume (PDF) <span class="text-danger">*</span></label>
+                <input type="file" class="form-control-file" id="resume" accept=".pdf" required>
+                <div class="invalid-feedback">Please upload your resume.</div>
+            </div>
+            <div class="form-group">
+                <label for="photo">Passport Photo (JPEG/PNG) <span class="text-danger">*</span></label>
+                <input type="file" class="form-control-file" id="photo" accept=".jpg, .jpeg, .png" required>
+                <div class="invalid-feedback">Please upload a passport photo.</div>
+            </div>
+            <div class="form-group">
+                <label for="passport">Passport (PDF) <span class="text-danger">*</span></label>
+                <input type="file" class="form-control-file" id="passport" accept=".pdf" required>
+                <div class="invalid-feedback">Please upload your passport.</div>
+            </div>
+            <div class="form-group">
+                <label for="idProof">ID Proof (PDF) <span class="text-danger">*</span></label>
+                <input type="file" class="form-control-file" id="idProof" accept=".pdf" required>
+                <div class="invalid-feedback">Please upload your ID proof.</div>
+            </div>
+
+            <!-- Education Details Section -->
+            <h5>Education Details</h5>
+
+            <!-- Secondary Education -->
+            <h6>Secondary Education (10th Grade) <span class="text-danger">*</span></h6>
+            <div class="form-group">
+                <label for="secondaryInstitution">Institution Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="secondaryInstitution" required>
+                <div class="invalid-feedback">Please enter your secondary school name.</div>
+            </div>
+            <div class="form-group">
+                <label for="secondaryBoard">Board <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="secondaryBoard" required>
+                <div class="invalid-feedback">Please enter your board name.</div>
+            </div>
+            <div class="form-group">
+                <label for="secondaryYear">Year of Passing <span class="text-danger">*</span></label>
+                <input type="number" class="form-control" id="secondaryYear" required>
+                <div class="invalid-feedback">Please enter your year of passing.</div>
+            </div>
+
+            <!-- Higher Secondary Education -->
+            <h6>Higher Secondary Education (12th Grade) <span class="text-danger">*</span></h6>
+            <div class="form-group">
+                <label for="higherSecondaryInstitution">Institution Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="higherSecondaryInstitution" required>
+                <div class="invalid-feedback">Please enter your higher secondary school name.</div>
+            </div>
+            <div class="form-group">
+                <label for="higherSecondaryBoard">Board <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="higherSecondaryBoard" required>
+                <div class="invalid-feedback">Please enter your board name.</div>
+            </div>
+            <div class="form-group">
+                <label for="higherSecondaryYear">Year of Passing <span class="text-danger">*</span></label>
+                <input type="number" class="form-control" id="higherSecondaryYear" required>
+                <div class="invalid-feedback">Please enter your year of passing.</div>
+            </div>
+
+            <!-- Undergraduate Education -->
+            <h6>Undergraduate (Bachelor's Degree) <span class="text-danger">*</span></h6>
+            <div class="form-group">
+                <label for="undergraduateInstitution">Institution Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="undergraduateInstitution" required>
+                <div class="invalid-feedback">Please enter your undergraduate institution name.</div>
+            </div>
+            <div class="form-group">
+                <label for="undergraduateDegree">Degree <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="undergraduateDegree" required>
+                <div class="invalid-feedback">Please enter your undergraduate degree.</div>
+            </div>
+            <div class="form-group">
+                <label for="undergraduateYear">Year of Passing <span class="text-danger">*</span></label>
+                <input type="number" class="form-control" id="undergraduateYear" required>
+                <div class="invalid-feedback">Please enter your year of passing.</div>
+            </div>
+
+            <!-- Postgraduate Education -->
+            <h6>Postgraduate (Master's Degree)</h6>
+            <div class="form-group">
+                <label for="postgraduateInstitution">Institution Name</label>
+                <input type="text" class="form-control" id="postgraduateInstitution">
+            </div>
+            <div class="form-group">
+                <label for="postgraduateDegree">Degree</label>
+                <input type="text" class="form-control" id="postgraduateDegree">
+            </div>
+            <div class="form-group">
+                <label for="postgraduateYear">Year of Passing</label>
+                <input type="number" class="form-control" id="postgraduateYear">
+            </div>
+
+            <!-- Work Experience Section -->
+            <h5>Work Experience (if any)</h5>
+            <div id="experienceSection">
+                <div class="form-group">
+                    <label for="experience1">Company Name</label>
+                    <input type="text" class="form-control" id="experience1">
+                </div>
+                <div class="form-group">
+                    <label for="role1">Role</label>
+                    <input type="text" class="form-control" id="role1">
+                </div>
+                <div class="form-group">
+                    <label for="duration1">Duration (Years)</label>
+                    <input type="number" class="form-control" id="duration1">
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-primary" id="addExperience">Add More Experience</button>
+
+            <!-- Skills Section -->
+            <h5>Technical Skills</h5>
+            <div class="form-group">
+                <label for="skills">List of Skills (Comma Separated) <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="skills" required>
+                <div class="invalid-feedback">Please list your skills.</div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary btn-block">Submit Application</button>
+        </form>
+    </div>
+</div>
+
+<!-- Bootstrap and jQuery JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
+
